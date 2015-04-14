@@ -1,40 +1,22 @@
 package scaunois.badistick.entity.membre;
 
-import scaunois.badistick.entity.classement.Classement;
+import scaunois.badistick.entity.joueur.Joueur;
 
-public class Membre {
+public class Membre extends Joueur {
 
-	protected String nom;
-	protected String prenom;
 	protected String email;
-	protected Classement classement;
-	
+	protected String pseudo;
+	protected String password;
+
 	public Membre() {
 		super();
 	}
 
-	public Membre(String nom, String prenom, String email, Classement classement) {
+	public Membre(String email, String pseudo, String password) {
 		super();
-		this.nom = nom;
-		this.prenom = prenom;
 		this.email = email;
-		this.classement = classement;
-	}
-
-	public String getNom() {
-		return nom;
-	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public String getPrenom() {
-		return prenom;
-	}
-
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
+		this.pseudo = pseudo;
+		this.password = password;
 	}
 
 	public String getEmail() {
@@ -45,21 +27,20 @@ public class Membre {
 		this.email = email;
 	}
 
-	public Classement getClassement() {
-		return classement;
+	public String getPseudo() {
+		return pseudo;
 	}
 
-	
-
-	
-	public void setClassement(Classement classement) {
-		this.classement = classement;
+	public void setPseudo(String pseudo) {
+		this.pseudo = pseudo;
 	}
 
-	@Override
-	public String toString() {
-		return "Membre [nom=" + nom + ", prenom=" + prenom + ", email=" + email
-				+ ", classement=" + classement + "]";
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

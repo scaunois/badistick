@@ -1,47 +1,12 @@
 package scaunois.badistick.entity.classement;
 
-public class Classement {
+public enum Classement {
 	
-	protected ListeClassement classementSimple;
-	protected ListeClassement classementDouble;
-	protected ListeClassement classementMixte;
-	
-	public Classement() {
-		super();
-	}
-	
-	public Classement(ListeClassement classementSimple,
-			ListeClassement classementDouble, ListeClassement classementMixte) {
-		super();
-		this.classementSimple = classementSimple;
-		this.classementDouble = classementDouble;
-		this.classementMixte = classementMixte;
-	}
-	
-	public ListeClassement getClassementSimple() {
-		return classementSimple;
-	}
-	public void setClassementSimple(ListeClassement classementSimple) {
-		this.classementSimple = classementSimple;
-	}
-	public ListeClassement getClassementDouble() {
-		return classementDouble;
-	}
-	public void setClassementDouble(ListeClassement classementDouble) {
-		this.classementDouble = classementDouble;
-	}
-	public ListeClassement getClassementMixte() {
-		return classementMixte;
-	}
-	public void setClassementMixte(ListeClassement classementMixte) {
-		this.classementMixte = classementMixte;
-	}
+	NC,
+	D4, D3, D2, D1,
+	C4, C3, C2, C1,
+	B4, B3, B2, B1, 
+	A4, A3, A2, A1, 
+	T50, T20, T10, T5
 
-	@Override
-	public String toString() {
-		return "Classement [classementSimple=" + classementSimple
-				+ ", classementDouble=" + classementDouble
-				+ ", classementMixte=" + classementMixte + "]";
-	}
-	
 }
