@@ -1,7 +1,10 @@
 package scaunois.badistick.dao;
 
+import org.springframework.stereotype.Repository;
+
 import scaunois.badistick.entity.joueur.Joueur;
 
+@Repository
 public class DAOJoueurImpl implements DAOJoueur {
 
 	public Joueur chercheJoueurParNom(String nom) {

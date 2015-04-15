@@ -1,7 +1,10 @@
 package scaunois.badistick.entity.joueur;
 
+import javax.persistence.Entity;
+
 import scaunois.badistick.entity.classement.ClassementJoueur;
 
+@Entity
 public class Joueur {
 
 	protected String nom;
