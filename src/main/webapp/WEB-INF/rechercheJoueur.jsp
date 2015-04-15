@@ -4,32 +4,38 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/rechercheJoueur.css">
 <title>Recherche de joueur</title>
 </head>
+
 <body>
+
+	<div class="blocRecherche">
 
 	<h1>Recherchez un joueur</h1>
 
 	<p>
 		Trouvez n'importe quel joueur selon les critères de votre choix. <br />
+		Si vous ne connaissez pas le nom exact, vous pouvez utiliser le caractère '*' pour remplacer un ou plusieurs caractères (ex. : par* trouvera Paris, d*m*n trouvera Dumoulin, etc...) <br/>
+		Remarque : La casse (majuscule/minuscule) n'est pas importante.
 	</p>
 	
-	<form action="consultationJoueur" method="post">
+	<form action="/consultationJoueur" method="post">
 		
-		Nom <input type="text" /> <br/><br/>
+		<span class="champRecherche">Nom</span> <input type="text" /> <br/><br/>
 		
-		Prenom <input type="text" /> <br/><br/>
+		<span class="champRecherche">Prenom</span> <input type="text" /> <br/><br/>
 		
-		License <input type="text" /> <br/><br/>
+		<span class="champRecherche">License</span> <input type="text" /> <br/><br/>
 		
-		Genre
+		<span class="champRecherche">Genre</span>
 		<select>
 			<option>Tous</option>
 			<option>Homme</option>
 			<option>Femme</option>
 		</select> <br/><br/>
 		
-		Classement
+		<span class="champRecherche">Classement</span>
 		<select>
 			<option>Tous</option>
 			<option>NC</option>
@@ -40,16 +46,21 @@
 			<option>Elite</option>
 		</select> <br/><br/>
 		
-		Ligue
+		<span class="champRecherche">Ligue</span>
 		<select>
 		
 		</select> <br/><br/>
 		
-		Ville (ou code postal) <input type="text"> <br/><br/>
+		<span class="champRecherche">Ville</span> <input type="text"> (ou code postal)<br/><br/>
 		
-		Sigle Club <input type="text"> <br/><br/>
+		<span class="champRecherche">Sigle Club</span> <input type="text"> <br/><br/>
+		
+		<span id="boutonSubmit"><input type="submit" value="Rechercher" /></span>
 		
 	</form>
+	
+	</div>
 
 </body>
+
 </html>

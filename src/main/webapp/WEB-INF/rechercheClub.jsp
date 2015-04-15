@@ -4,9 +4,31 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>Recherche de club</title>
 </head>
 <body>
+	
+	
+	
+	<h1>Recherchez un club</h1>
+	
+	<p>
+		Trouvez un club selon la ville, le sigle ou le nom.
+	</p>
+	
+	<form action="/consultationClub" method="post">
+	
+	Sigle <input type="text" /> <br/><br/>
+
+	Nom du club <input type="text" /> <br/><br/>
+	
+	Ville <input type="text" />	<br/><br/>
+	
+	<input type="submit" value="Rechercher" />	
+	
+	</form>
+
 
 </body>
 </html>
