@@ -17,8 +17,12 @@ public class RechercheJoueurSvcImpl implements RechercheJoueurSvc {
 			String ligue, String ville, String sigleClub) {
 
 		if (numeroLicense != null && !numeroLicense.equals("")) {
-			return 
+
+		} else {
+
 		}
+
+		return null;
 
 	}
 }
