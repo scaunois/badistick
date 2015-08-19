@@ -1,4 +1,4 @@
-package scaunois.badistick.entity.classement;
+package scaunois.badistick.entity.joueur.classement;
 
 public class ClassementJoueur {
 	

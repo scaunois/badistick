@@ -2,9 +2,9 @@ package badistick.dao;
 
 import scaunois.badistick.dao.DAOJoueur;
 import scaunois.badistick.dao.DAOJoueurImpl;
-import scaunois.badistick.entity.classement.Classement;
-import scaunois.badistick.entity.classement.ClassementJoueur;
 import scaunois.badistick.entity.joueur.Joueur;
+import scaunois.badistick.entity.joueur.classement.Classement;
+import scaunois.badistick.entity.joueur.classement.ClassementJoueur;
 
 public class TestDaoJoueur {
 

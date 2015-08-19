@@ -2,7 +2,8 @@ package scaunois.badistick.entity.joueur;
 
 import javax.persistence.Entity;
 
-import scaunois.badistick.entity.classement.ClassementJoueur;
+import scaunois.badistick.entity.joueur.categorie.Categorie;
+import scaunois.badistick.entity.joueur.classement.ClassementJoueur;
 
 @Entity
 public class Joueur {
@@ -11,16 +12,18 @@ public class Joueur {
 	protected String prenom;
 	protected int numeroLicense;
 	protected ClassementJoueur classement;
+	protected Categorie categorie;
 
 	public Joueur() {
 		super();
 	}
 
-	public Joueur(String nom, String prenom, ClassementJoueur classement) {
+	public Joueur(String nom, String prenom, ClassementJoueur classement, Categorie categorie) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.classement = classement;
+		this.categorie = categorie;
 	}
 
 	public String getNom() {
@@ -55,10 +58,17 @@ public class Joueur {
 		this.classement = classement;
 	}
 
+	public Categorie getCategorie() {
+		return categorie;
+	}
+
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+	}
+
 	@Override
 	public String toString() {
-		return "Membre [" + nom + "  " + prenom + "  " + numeroLicense + "  "
-				+ classement + "]";
+		return "Membre [" + nom + "  " + prenom + "  " + numeroLicense + "  " + classement + "]";
 	}
 
 }

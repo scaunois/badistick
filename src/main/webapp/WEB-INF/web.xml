@@ -23,7 +23,7 @@
 
 	<servlet-mapping>
 		<servlet-name>RechercheJoueurServlet</servlet-name>
-		<url-pattern>/rechercheJoueur</url-pattern>
+		<url-pattern>/recherche_joueur</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -33,7 +33,7 @@
 
 	<servlet-mapping>
 		<servlet-name>RechercheClubServlet</servlet-name>
-		<url-pattern>/rechercheClub</url-pattern>
+		<url-pattern>/recherche_club</url-pattern>
 	</servlet-mapping>
 
 </web-app>
