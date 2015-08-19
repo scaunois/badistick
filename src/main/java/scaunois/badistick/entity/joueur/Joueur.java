@@ -2,6 +2,7 @@ package scaunois.badistick.entity.joueur;
 
 import javax.persistence.Entity;
 
+import scaunois.badistick.entity.club.Club;
 import scaunois.badistick.entity.joueur.categorie.Categorie;
 import scaunois.badistick.entity.joueur.classement.ClassementJoueur;
 
@@ -11,6 +12,7 @@ public class Joueur {
 	protected String nom;
 	protected String prenom;
 	protected int numeroLicense;
+	protected Club club;
 	protected ClassementJoueur classement;
 	protected Categorie categorie;
 
@@ -18,7 +20,7 @@ public class Joueur {
 		super();
 	}
 
-	public Joueur(String nom, String prenom, ClassementJoueur classement, Categorie categorie) {
+	public Joueur(String nom, String prenom, int numeroLicense, Club club, ClassementJoueur classement, Categorie categorie) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
@@ -48,6 +50,14 @@ public class Joueur {
 
 	public void setNumeroLicense(int numeroLicense) {
 		this.numeroLicense = numeroLicense;
+	}
+
+	public Club getClub() {
+		return club;
+	}
+
+	public void setClub(Club club) {
+		this.club = club;
 	}
 
 	public ClassementJoueur getClassement() {

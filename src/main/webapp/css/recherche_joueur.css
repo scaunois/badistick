@@ -1,17 +1,17 @@
 
 h1
 {
-	color: #0174DF;
-		text-align: center;
+	color: #707070;
+	text-align: center;
 	text-decoration: underline;
 }
 
 .blocRecherche
 {
-	background-color: #DDEEFF;
+	background-color: #FFDD88;
 	width: 800px;
 	margin: auto;
-	border : 3px solid #0174DF;	
+	border : 3px solid #707070;	
 }
 
 .champRecherche
@@ -21,7 +21,7 @@ h1
 	border: 2px solid #0174DF;
 	margin-right: 5px;
 	font-weight: bold;
-	background-color: #99FFFF;
+	background-color: #FF8040;
 }
 
 form

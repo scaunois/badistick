@@ -9,7 +9,7 @@ public class Club {
 	protected String nomClub;
 	protected String sigle;
 	protected String ville;
-	protected Ligue ligue;
+	protected String ligue;
 
 	protected List<Joueur> joueurs;
 

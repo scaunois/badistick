@@ -10,10 +10,10 @@
 </head>
 
 <body>
-
+	
 	<div class="blocRecherche">
 
-	<h1>Recherchez un joueur</h1>
+	<h1>Rechercher un joueur</h1>
 
 	<p>
 		Trouvez n'importe quel joueur selon les critères de votre choix. <br />
@@ -49,32 +49,10 @@
 		
 		<span class="champRecherche">&nbsp;Ligue</span>
 		<select>
-			<option>Alsace</option>
-			<option>Aquitaine</option>
-			<option>Auvergne</option>
-			<option>Basse Normandie</option>
-			<option>Bourgogne</option>
-			<option>Bretagne</option>
-			<option>Centre</option>
-			<option>Champagne Ardenne</option>
-			<option>Franche-Comté</option>
-			<option>Guadeloupe</option>
-			<option>Guyane</option>
-			<option>Haute Normandie</option>
-			<option>Ile de France</option>
-			<option>Languedoc Roussillon</option>
-			<option>Limousin</option>
-			<option>Lorraine</option>
-			<option>Martinique</option>
-			<option>Midi Pyrénées</option>
-			<option>Nord Pas de Calais</option>
-			<option>Nouvelle Calédonie</option>
-			<option>Pays de la Loire</option>
-			<option>Picardie</option>
-			<option>Poitou Charentes</option>
-			<option>Provence Alpes Côte d'Azur</option>
-			<option>Réunion</option>
-			<option>Rhone Alpes</option>
+			<option>Toutes</option>
+			<c:forEach items="${ligues}" var="ligue">
+				<option><c:out value="${ ligue }"></c:out></option>
+			</c:forEach>
 		</select> <br/><br/>
 		
 		<span class="champRecherche">&nbsp;Ville</span> <input type="text"> (ou code postal)<br/><br/>
