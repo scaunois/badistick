@@ -15,6 +15,8 @@ public class RechercheJoueurServlet extends HttpServlet {
 	public void doGet(HttpServletRequest requete, HttpServletResponse reponse)
 			throws ServletException, IOException {
 
+		System.out.println("servlet appelée !");
+
 		requete.setAttribute("ligues", Ligue.ligues);
 
 		this.getServletContext()
@@ -22,4 +24,13 @@ public class RechercheJoueurServlet extends HttpServlet {
 				.forward(requete, reponse);
 
 	}
+
+	@Override
+	public void doPost(HttpServletRequest requete, HttpServletResponse reponse)
+			throws ServletException, IOException {
+
+		doGet(requete, reponse);
+
+	}
+
 }

@@ -11,7 +11,8 @@
 
 <body>
 	
-	<div class="blocRecherche">
+<!-- Bloc pour la recherche de joueur -->
+<div class="blocRecherche">
 
 	<h1>Rechercher un joueur</h1>
 
@@ -21,7 +22,7 @@
 		Remarque : La casse (majuscule/minuscule) n'est pas importante.
 	</p>
 	
-	<form action="/consultationJoueur" method="post">
+	<form action="recherche_joueur" method="post">
 		
 		<span class="champRecherche">&nbsp;Nom</span> <input type="text" /> <br/><br/>
 		
@@ -63,7 +64,19 @@
 		
 	</form>
 	
-	</div>
+</div class="blocResultats">
+
+<!-- Bloc pour l'affichage de la liste des résultats -->
+<c:if test="${ param.rechercher != null && param.rechercher == 'Rechercher' }">
+<div>
+	
+	<h1>Joueurs trouvés</h1>
+	<c:forEach items="joueurs" var="j">
+		
+	</c:forEach>
+
+</div>
+</c:if>
 
 </body>
 
