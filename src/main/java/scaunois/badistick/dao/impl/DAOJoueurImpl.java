@@ -1,31 +1,30 @@
-package scaunois.badistick.dao;
+
+package scaunois.badistick.dao.impl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import org.springframework.stereotype.Repository;
-
+import scaunois.badistick.dao.pub.DAOJoueur;
 import scaunois.badistick.entity.joueur.Joueur;
 
-@Repository
 public class DAOJoueurImpl implements DAOJoueur {
 
 	@PersistenceContext(unitName = "badistick")
 	EntityManager entityManager;
 
+	/**
+	 * Renvoie le Joueur trouvé ou null
+	 */
 	public Joueur chercheJoueurParLicense(String license) {
 
-		Query query = entityManager
-				.createQuery("FROM Joueur WHERE numeroLicense = :numeroLicense");
+		Query query = entityManager.createQuery("FROM Joueur WHERE license = :license");
 		query.setParameter(1, license);
-		Joueur joueur = null;
 		try {
-			joueur = (Joueur) query.getSingleResult();
+			return (Joueur) query.getSingleResult();
 		} catch (Exception e) {
-
+			return null;
 		}
-		return joueur;
 
 	}
 

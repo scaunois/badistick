@@ -1,21 +1,17 @@
-
-h1
-{
+h1 {
 	color: #707070;
 	text-align: center;
 	text-decoration: underline;
 }
 
-.blocRecherche
-{
+.blocRecherche {
 	background-color: #FFDD88;
 	width: 800px;
 	margin: auto;
-	border : 3px solid #707070;	
+	border: 3px solid #707070;
 }
 
-.champRecherche
-{
+.champRecherche {
 	float: left;
 	width: 90px;
 	border: 2px solid #0174DF;
@@ -24,13 +20,11 @@ h1
 	background-color: #FF8040;
 }
 
-form
-{
-	margin: 20px;	
+form {
+	margin: 20px;
 }
 
-p
-{
+p {
 	font-size: 1.1em;
 	margin: 20px;
 }

@@ -1,7 +1,11 @@
+
 package scaunois.badistick.entity.membre;
+
+import javax.persistence.Entity;
 
 import scaunois.badistick.entity.joueur.Joueur;
 
+@Entity
 public class Membre extends Joueur {
 
 	protected String email;

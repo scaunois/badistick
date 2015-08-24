@@ -1,6 +1,8 @@
+
 package scaunois.badistick.entity.joueur;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import scaunois.badistick.entity.club.Club;
 import scaunois.badistick.entity.joueur.categorie.Categorie;
@@ -9,9 +11,11 @@ import scaunois.badistick.entity.joueur.classement.ClassementJoueur;
 @Entity
 public class Joueur {
 
+	@Id
+	long id;
 	protected String nom;
 	protected String prenom;
-	protected int numeroLicense;
+	protected String license;
 	protected Club club;
 	protected ClassementJoueur classement;
 	protected Categorie categorie;
@@ -20,10 +24,12 @@ public class Joueur {
 		super();
 	}
 
-	public Joueur(String nom, String prenom, int numeroLicense, Club club, ClassementJoueur classement, Categorie categorie) {
+	public Joueur(String nom, String prenom, String license, Club club, ClassementJoueur classement, Categorie categorie) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
+		this.license = license;
+		this.club = club;
 		this.classement = classement;
 		this.categorie = categorie;
 	}
@@ -44,12 +50,12 @@ public class Joueur {
 		this.prenom = prenom;
 	}
 
-	public int getNumeroLicense() {
-		return numeroLicense;
+	public String getLicense() {
+		return license;
 	}
 
-	public void setNumeroLicense(int numeroLicense) {
-		this.numeroLicense = numeroLicense;
+	public void setLicense(String license) {
+		this.license = license;
 	}
 
 	public Club getClub() {
@@ -78,7 +84,7 @@ public class Joueur {
 
 	@Override
 	public String toString() {
-		return "Membre [" + nom + "  " + prenom + "  " + numeroLicense + "  " + classement + "]";
+		return "Membre [" + nom + "  " + prenom + "  " + license + "  " + classement + "]";
 	}
 
 }

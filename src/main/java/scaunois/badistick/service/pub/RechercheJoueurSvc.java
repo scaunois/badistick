@@ -1,4 +1,5 @@
-package scaunois.badistick.service;
+
+package scaunois.badistick.service.pub;
 
 import java.util.List;
 
@@ -12,20 +13,10 @@ public interface RechercheJoueurSvc {
 	 * Si tous les champs ne sont pas remplis, on ne cherche que selon les
 	 * critères qui le sont.
 	 * 
-	 * 
-	 * @param nom
-	 * @param prenom
-	 * @param numeroLicense
-	 * @param genre
-	 * @param Classement
-	 * @param ligue
-	 * @param ville
-	 * @param sigleClub
 	 * @return : la liste des joueurs correspondant à ces critères, vide s'il
 	 *         n'y en a pas
 	 */
-	public List<Joueur> rechercheJoueurs(String nom, String prenom,
-			String numeroLicense, String genre, String Classement,
-			String ligue, String ville, String sigleClub);
+	public List<Joueur> rechercheJoueurs(String nom, String prenom, String license, String genre, String classement, String ligue,
+			String ville, String sigleClub);
 
 }

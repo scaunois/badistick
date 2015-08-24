@@ -1,25 +1,28 @@
+
 package scaunois.badistick.entity.tournoi;
 
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import scaunois.badistick.entity.joueur.Joueur;
 
+@Entity
 public class Tournoi {
 
+	@Id
+	long id;
 	protected String nomTournoi;
 	protected Date[] dateTournoi = new Date[2];
 	protected int nombreMaxInscrits;
 	protected List<Joueur> joueursInscrits;
 	protected List<Joueur> joueursConvoques;
 
-	public Tournoi() {
-		super();
-	}
+	public Tournoi() {}
 
-	public Tournoi(String nomTournoi, Date[] dateTournoi,
-			int nombreMaxInscrits, List<Joueur> joueursInscrits,
-			List<Joueur> joueursConvoques) {
+	public Tournoi(String nomTournoi, Date[] dateTournoi, int nombreMaxInscrits, List<Joueur> joueursInscrits, List<Joueur> joueursConvoques) {
 		super();
 		this.nomTournoi = nomTournoi;
 		this.dateTournoi = dateTournoi;
