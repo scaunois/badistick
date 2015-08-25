@@ -12,7 +12,11 @@
 
 	<!-- Si l'utilisateur n'est pas connecté, on affiche le formulaire de connexion -->
 	<!-- Si l'utilisateur est connecté, on affiche son pseudo -->
-	<c:import url="/WEB-INF/bloc_connexion.jsp"></c:import>
+	<c:import url="/bloc_connexion.jsp"></c:import>
+	
+	<h1>BadiStick - The bad reference</h1>
+	
+	<c:import url="/menu.jsp"></c:import>
 	
 </body>
 </html>
