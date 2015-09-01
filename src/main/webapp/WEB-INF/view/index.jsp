@@ -5,18 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/css/main.css" />
 <title>BadiStick - The bad reference !</title>
 </head>
 <body>
-
+	
 	<!-- Si l'utilisateur n'est pas connecté, on affiche le formulaire de connexion -->
 	<!-- Si l'utilisateur est connecté, on affiche son pseudo -->
-	<c:import url="/bloc_connexion.jsp"></c:import>
+	<c:import url="bloc_connexion.jsp"></c:import>
 	
 	<h1>BadiStick - The bad reference</h1>
 	
-	<c:import url="/menu.jsp"></c:import>
+	<c:import url="menu.jsp"></c:import>
 	
 </body>
 </html>

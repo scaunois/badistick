@@ -10,11 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 public class AccueilServlet extends HttpServlet {
 
 	@Override
-	public void doGet(HttpServletRequest requete, HttpServletResponse reponse)
-			throws ServletException, IOException {
+	public void doGet(HttpServletRequest requete, HttpServletResponse reponse) throws ServletException, IOException {
 
-		this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp")
-				.forward(requete, reponse);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/view/index.jsp").forward(requete, reponse);
 
 	}
 
