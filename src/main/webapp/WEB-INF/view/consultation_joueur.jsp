@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/css/main.css">
 <link rel="stylesheet" type="text/css" href="${ pageContext.request.contextPath }/css/recherche.css">
 <title>Recherche de joueur</title>
 </head>
