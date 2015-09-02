@@ -20,6 +20,24 @@ h1 {
 	background-color: #FF8040;
 }
 
+.boutonRechercher
+{
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 30px;
+	border: 1px solid grey;
+	/*border: none;*/
+	
+	background-color: #DD8040;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #aaa;
+}
+
 form {
 	margin: 20px;
 }

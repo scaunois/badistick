@@ -8,13 +8,13 @@
 	
 		<li><a href="/badistick/accueil">Accueil</a></li>
 
-		<li>Recherche de joueur</li>
+		<li><a href="/badistick/consultation_joueur">Recherche de joueur</a></li>
 
-		<li>Recherche de club</li>
+		<li><a href="/badistick/consultation_club">Recherche de club</a></li>
 
-		<li>Mon profil</li>
+		<li><a href="">Mon profil</a></li>
 		
-		<li>Boutique</li>
+		<li><a href="">Boutique</a></li>
 	
 	</ul>
 

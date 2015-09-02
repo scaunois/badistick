@@ -6,6 +6,10 @@
   version="3.0">
 
 	<display-name>badistick</display-name>
+	
+	<welcome-file-list>
+        <welcome-file>/WEB-INF/view/index.jsp</welcome-file>
+    </welcome-file-list>
 
 	<servlet>
 		<servlet-name>AccueilServlet</servlet-name>
@@ -15,7 +19,6 @@
 		<servlet-name>AccueilServlet</servlet-name>
 		<url-pattern>/accueil</url-pattern>
 		<url-pattern>/index</url-pattern>
-		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -28,12 +31,12 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>RechercheClubServlet</servlet-name>
-		<servlet-class>scaunois.badistick.servlet.RechercheClubServlet</servlet-class>
+		<servlet-name>ConsultationClubServlet</servlet-name>
+		<servlet-class>scaunois.badistick.servlet.ConsultationClubServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>RechercheClubServlet</servlet-name>
-		<url-pattern>/recherche_club</url-pattern>
+		<servlet-name>ConsultationClubServlet</servlet-name>
+		<url-pattern>/consultation_club</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -45,6 +48,4 @@
 		<url-pattern>/recherche_joueur</url-pattern>
 	</servlet-mapping>
 	
-	
-
 </web-app>
