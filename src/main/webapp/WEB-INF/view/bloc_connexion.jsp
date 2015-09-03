@@ -3,6 +3,11 @@
 <!-- bloc pour la connexion -->
 <div class=bloc_connexion>
 	
+	<%
+		String[] tab = request.getRequestURI().split("/");
+		String pageParente = tab[tab.length-1];
+	%>
+	
 	<!-- Affichage du formulaire si pas connecté -->
 	<c:if test="${ param.connecte == null || param.connecte == 'Deconnexion' }">
 		<form action="/badistick/connexion" method="post">
