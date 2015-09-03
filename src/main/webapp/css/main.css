@@ -4,3 +4,18 @@ body
 	background-color: #DDDDDD;
 	/*background-color: #444444;*/
 }
+
+header
+{
+	border: 2px solid green;
+}
+
+nav
+{
+	border: 2px solid blue; 
+}
+
+.bloc_connexion
+{
+	border: 2px solid yellow;
+}

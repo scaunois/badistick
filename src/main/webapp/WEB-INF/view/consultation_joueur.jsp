@@ -11,7 +11,7 @@
 
 <body>
 
-		<c:import url="menu.jsp"></c:import>
+		<c:import url="bloc_include_principal.jsp"></c:import>
 
 		<!-- Bloc pour la recherche de joueur -->
 		<div class="blocRecherche">

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<c:import url="menu.jsp"></c:import>
+	<c:import url="bloc_include_principal.jsp"></c:import>
 
 
 	<div class="blocRecherche">

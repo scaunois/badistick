@@ -1,7 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<!-- menu du site - présent sur toutes les pages -->
-
+<!-- menu du site -->
 <nav>
 
 	<ul>

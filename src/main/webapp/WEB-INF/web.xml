@@ -48,4 +48,13 @@
 		<url-pattern>/recherche_joueur</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>ConnexionServlet</servlet-name>
+		<servlet-class>scaunois.badistick.servlet.ConnexionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConnexionServlet</servlet-name>
+		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
