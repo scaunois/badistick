@@ -27,9 +27,7 @@
 			<groupId>javax.ejb</groupId>
 			<artifactId>ejb-api</artifactId>
 			<version>3.0</version>
-		</dependency>
-		
-		
+		</dependency>	
 
 		<!-- Persistence -->
 		<dependency>
