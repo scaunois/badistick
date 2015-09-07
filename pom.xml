@@ -22,6 +22,14 @@
 			<version>1.2</version>
 		</dependency>
 
+		<!-- EJB -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>3.0</version>
+		</dependency>
+		
+		
 
 		<!-- Persistence -->
 		<dependency>

@@ -1,6 +1,6 @@
-
 package scaunois.badistick.dao.impl;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -8,6 +8,7 @@ import javax.persistence.Query;
 import scaunois.badistick.dao.pub.DAOJoueur;
 import scaunois.badistick.entity.joueur.Joueur;
 
+@Stateless
 public class DAOJoueurImpl implements DAOJoueur {
 
 	@PersistenceContext(unitName = "badistick")
