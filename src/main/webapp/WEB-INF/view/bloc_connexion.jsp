@@ -14,6 +14,7 @@
 			<input type="text" name="login" placeholder="Login (ou e-mail)">
 			<input type="password" name="password" placeholder="Mot de passe">
 			<input type="submit" name="connecte" value="Connexion">
+			<input type="hidden" name=pageParente value="<%= pageParente %>">
 		</form>
 	</c:if>
 	
@@ -22,7 +23,17 @@
 		[${ param.login }]
 		<form action="/badistick/connexion" method="post">
 			<input type="submit" name="connecte" value="Deconnexion" />
+			<input type="hidden" name=pageParente value="<%= pageParente %>">
 		</form>
 	</c:if>
+	
+	<%
+		if(request.getParameter("pageParente") != null){
+			String pageRedirection = request.getParameter("pageParente").substring(0, request.getParameter("pageParente").length() - 4);
+			System.out.println("on redirige vers : " + pageRedirection);
+			response.sendRedirect(pageRedirection);
+		}
+	 
+	 %>
 
 </div>

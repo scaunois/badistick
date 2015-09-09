@@ -1,17 +1,12 @@
-
 package scaunois.badistick.entity.membre;
-
-import javax.persistence.Entity;
 
 import scaunois.badistick.entity.joueur.Joueur;
 
-@Entity
 public class Membre extends Joueur {
 
 	protected String email;
 	protected String pseudo;
 	protected String password;
-	protected int numeroLicense; // reprend la license si c'est un joueur, 0 sinon
 
 	public Membre() {
 		super();

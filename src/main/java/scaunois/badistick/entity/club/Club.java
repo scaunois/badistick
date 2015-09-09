@@ -1,14 +1,11 @@
-
 package scaunois.badistick.entity.club;
 
 import java.util.List;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import scaunois.badistick.entity.joueur.Joueur;
 
-@Entity
 public class Club {
 
 	@Id
@@ -19,7 +16,8 @@ public class Club {
 	protected String ligue;
 	protected List<Joueur> joueurs;
 
-	public Club() {}
+	public Club() {
+	}
 
 	public Club(String nomClub, String sigle, String ville, String ligue, List<Joueur> joueurs) {
 		super();
