@@ -4,6 +4,8 @@
 <div class=bloc_connexion>
 	
 	<%
+		System.out.println("connecte=" + request.getParameter("connecte"));
+	
 		String[] tab = request.getRequestURI().split("/");
 		String pageParente = tab[tab.length-1];
 	%>
@@ -20,6 +22,7 @@
 	
 	<!-- Affichage du pseudo si connecté + bouton pour déco -->
 	<c:if test="${ param.connecte == 'Connexion' }">
+		<% System.out.println("ici"); %>
 		[${ param.login }]
 		<form action="/badistick/connexion" method="post">
 			<input type="submit" name="connecte" value="Deconnexion" />
