@@ -6,40 +6,22 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.ejb.Stateless;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-
-import scaunois.badistick.dao.pub.DAOJoueur;
 import scaunois.badistick.entity.joueur.Joueur;
 import scaunois.badistick.entity.joueur.categorie.Categorie;
 import scaunois.badistick.entity.joueur.classement.Classement;
 import scaunois.badistick.entity.joueur.classement.ClassementJoueur;
 
-@Stateless
-public class DAOJoueurImpl implements DAOJoueur {
+public class DAOJoueurImpl /*implements DAOJoueur*/{
 
 	/*
 	 * TODO à supprimer
 	 */
 	public List<Joueur> liste = new ArrayList<Joueur>();
 
-	@PersistenceContext(unitName = "badistick")
-	EntityManager entityManager;
-
 	/**
 	 * Renvoie le Joueur trouvé ou null
 	 */
 	public Joueur chercheJoueurParLicense(String license) {
-
-		Query query = entityManager.createQuery("FROM Joueur WHERE license = :license");
-		query.setParameter(1, license);
-		try {
-			return (Joueur) query.getSingleResult();
-		} catch (Exception e) {
-			return null;
-		}
 
 	}
 
@@ -59,8 +41,6 @@ public class DAOJoueurImpl implements DAOJoueur {
 	}
 
 	public void sauvegardeJoueur(Joueur joueur) {
-
-		entityManager.persist(joueur);
 
 	}
 

@@ -16,7 +16,7 @@
 		<!-- Bloc pour la recherche de joueur -->
 		<div class="blocRecherche">
 
-				<h1>Rechercher un joueur</h1>
+				<h2>Rechercher un joueur</h2>
 
 				<p>
 						Trouvez n'importe quel joueur selon les critères de votre choix. <br />
@@ -81,7 +81,7 @@
 				test="${ param.rechercher != null && param.rechercher == 'Rechercher' }">
 				<div>
 
-						<h1>Joueurs trouvés</h1>
+						<h2>Joueurs trouvés</h2>
 						<c:forEach items="joueurs" var="j">
 
 						</c:forEach>

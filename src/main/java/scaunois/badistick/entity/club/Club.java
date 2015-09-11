@@ -2,13 +2,10 @@ package scaunois.badistick.entity.club;
 
 import java.util.List;
 
-import javax.persistence.Id;
-
 import scaunois.badistick.entity.joueur.Joueur;
 
 public class Club {
 
-	@Id
 	long id;
 	protected String nomClub;
 	protected String sigle;

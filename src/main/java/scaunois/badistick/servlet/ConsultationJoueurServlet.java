@@ -8,15 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import scaunois.badistick.entity.club.Ligue;
 import scaunois.badistick.entity.joueur.Joueur;
 import scaunois.badistick.service.pub.RechercheJoueurSvc;
 
 public class ConsultationJoueurServlet extends HttpServlet {
 
-	@Autowired
 	RechercheJoueurSvc rechercheJoueurSvc;
 
 	@Override
@@ -24,7 +21,8 @@ public class ConsultationJoueurServlet extends HttpServlet {
 
 		requete.setAttribute("ligues", Ligue.ligues);
 
-		this.getServletContext().getRequestDispatcher("/WEB-INF/view/consultation_joueur.jsp").forward(requete, reponse);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/view/consultation_joueur.jsp")
+				.forward(requete, reponse);
 
 	}
 
@@ -34,7 +32,8 @@ public class ConsultationJoueurServlet extends HttpServlet {
 		/* TODO */
 		List<Joueur> joueursTrouves = null;
 
-		this.getServletContext().getRequestDispatcher("/WEB-INF/view/consultation_joueur.jsp").forward(requete, reponse);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/view/consultation_joueur.jsp")
+				.forward(requete, reponse);
 
 	}
 }

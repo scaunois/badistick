@@ -15,7 +15,7 @@
 
 	<div class="blocRecherche">
 
-		<h1>Recherchez un club</h1>
+		<h2>Recherchez un club</h2>
 
 		<p>Trouvez un club selon la ville, le sigle ou le nom.</p>
 

@@ -1,14 +1,11 @@
 package scaunois.badistick.entity.joueur;
 
-import javax.persistence.Id;
-
 import scaunois.badistick.entity.club.Club;
 import scaunois.badistick.entity.joueur.categorie.Categorie;
 import scaunois.badistick.entity.joueur.classement.ClassementJoueur;
 
 public class Joueur {
 
-	@Id
 	long id;
 	protected String nom;
 	protected String prenom;
